@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & SEO
+       Replace GA_MEASUREMENT_ID with your actual G-XXXXXXXXXX
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jaideep Nutalapati — Data Analyst, Data Scientist, and Data Engineer based in Chicago, IL. MS Computer Science, UIC. Expert in Python, SQL, machine learning, and data visualization." />
+  <meta name="keywords" content="Jaideep Nutalapati, Data Analyst, Data Scientist, Data Engineer, Chicago, UIC, Python, SQL, Machine Learning, Portfolio" />
+  <meta name="author" content="Jaideep Nutalapati" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (for LinkedIn/social previews) -->
+  <meta property="og:title" content="Jaideep Nutalapati | Data Analyst & Data Scientist" />
+  <meta property="og:description" content="Portfolio of Jaideep Nutalapati — Data Analyst, Data Scientist, MS CS @ UIC Chicago." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://njaideep2003.github.io" />
+  <meta property="og:image" content="https://njaideep2003.github.io/assets/img/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jaideep Nutalapati | Data Analyst & Data Scientist" />
+  <meta name="twitter:description" content="Portfolio of Jaideep Nutalapati — Data Analyst & Data Scientist based in Chicago." />
+
+  <!-- Structured Data (JSON-LD) for Google indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaideep Nutalapati",
+    "url": "https://njaideep2003.github.io",
+    "email": "nutalapatijaideep18@gmail.com",
+    "jobTitle": "Data Analyst | Data Scientist",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL" },
+    "sameAs": [
+      "https://www.linkedin.com/in/nutalapati-jaideep",
+      "https://github.com/njaideep2003",
+      "https://sites.google.com/view/jaideep-nutalapati"
+    ]
+  }
+  </script>
+
+  <title>Jaideep Nutalapati | Data Analyst & Data Scientist</title>
+
+  <!-- ============================================================
+       GOOGLE ANALYTICS 4
+       GUIDE: Replace GA_MEASUREMENT_ID below with your actual
+       Measurement ID (format: G-XXXXXXXXXX).
+       Steps to get it:
+       1. Go to analytics.google.com
+       2. Create account → Create Property → Web
+       3. Enter your GitHub Pages URL: njaideep2003.github.io
+       4. Copy the Measurement ID (G-XXXXXXXXXX)
+       5. Replace GA_MEASUREMENT_ID in both lines below
+       ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JN<span class="accent-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="hero">
+    <canvas id="data-canvas"></canvas>
+    <div class="hero-content">
+
+      <!-- ========================================================
+           PROFILE PHOTO
+           GUIDE: To add your photo:
+           1. Add your photo to assets/img/ folder
+           2. Name it profile.jpg (or profile.png)
+           3. Delete the .profile-placeholder div below
+           4. Uncomment the <img> tag below it
+           ======================================================== -->
+      <div class="profile-placeholder" aria-label="Profile photo placeholder">
+        <span>JN</span>
+        <p class="placeholder-hint">Add profile.jpg to assets/img/ to replace this</p>
+      </div>
+      <!-- <img src="assets/img/profile.jpg" alt="Jaideep Nutalapati" class="profile-photo" /> -->
+
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Jaideep Nutalapati</h1>
+        <div class="hero-role">
+          <span class="role-prefix">I work in </span>
+          <span id="typed-role" class="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline">
+          Turning raw data into decisions that actually move things —<br />
+          from 680,000+ NYC tree records to a $47-50M university procurement call.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+          <div class="resume-dropdown">
+            <button class="btn-outline">Download Resume ▾</button>
+            <div class="dropdown-menu">
+              <a href="resume/Jaideep_DA_Resume.pdf" download>Data Analyst Resume</a>
+              <a href="resume/Jaideep_DS_Resume.pdf" download>Data Scientist Resume</a>
+              <a href="resume/Jaideep_DE_Resume.pdf" download>Data Engineer Resume</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">11</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Roles Targeted</span></div>
+          <div class="stat"><span class="stat-num">$50M</span><span class="stat-label">Budget Impacted</span></div>
+          <div class="stat"><span class="stat-num">680K+</span><span class="stat-label">Records Analyzed</span></div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">&#8595;</a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT / INTRO SECTION
+       ============================================================ -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a recent MS Computer Science graduate from the University of Illinois at Chicago,
+            with a focus on data science, machine learning, and visual analytics. I build things
+            that help people understand what their data is actually saying — not just what it looks like.
+          </p>
+          <p>
+            My background spans data analysis, machine learning, and data engineering. I've worked
+            on everything from campus-wide operational audits that informed $47-50M decisions, to
+            deploying production recommendation systems with real-time monitoring. I'm most interested
+            in roles where the analytical output changes how something actually works.
+          </p>
+          <p>
+            Outside of data, I follow geography, politics, cars, and bikes — which probably explains
+            why my projects keep ending up involving election maps and marathon routes.
+          </p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="skill-tags">
+              <span>Python</span><span>SQL</span><span>R</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Analysis & ML</h4>
+            <div class="skill-tags">
+              <span>EDA</span><span>Statistical Analysis</span><span>A/B Testing</span>
+              <span>Regression</span><span>XGBoost</span><span>scikit-learn</span>
+              <span>Feature Engineering</span><span>ETL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Visualization & BI</h4>
+            <div class="skill-tags">
+              <span>Tableau</span><span>Power BI</span><span>Plotly</span>
+              <span>D3.js</span><span>Seaborn</span><span>Matplotlib</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Tools & Platforms</h4>
+            <div class="skill-tags">
+              <span>Docker</span><span>Git/GitHub</span><span>FastAPI</span>
+              <span>Snowflake</span><span>Streamlit</span><span>Google Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section id="education">
+    <div class="section-inner">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>University of Illinois at Chicago</h3>
+              <span class="timeline-date">Aug 2024 — May 2026</span>
+            </div>
+            <p class="timeline-sub">Master of Computer Science · Chicago, IL</p>
+            <p class="timeline-detail">
+              Relevant coursework: Data Science, Visual Data Science, Visualization & Visual Analytics,
+              Responsible AI, Machine Learning, Data Analytics, Computer Networks.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Jain University</h3>
+              <span class="timeline-date">Aug 2020 — May 2024</span>
+            </div>
+            <p class="timeline-sub">Bachelor of Technology in Computer Science and Engineering · Bangalore, India</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+       ============================================================ -->
+  <section id="experience">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>UIC Campus Housing</h3>
+              <span class="timeline-date">Apr 2025 — May 2026</span>
+            </div>
+            <p class="timeline-sub">Data & Operations Analyst · Chicago, IL</p>
+            <ul class="timeline-bullets">
+              <li>Conducted a campus-wide furniture audit across 9 buildings and 1,000+ apartments, organizing 25,000+ asset records using Google Sheets and Python.</li>
+              <li>Built EDA visualizations and a condition-based prioritization framework, classifying assets into Good (75-80%), Wear & Tear (5-10%), and Damaged (12-15%) tiers.</li>
+              <li>Delivered a stakeholder report supporting a $47-50M procurement decision to housing management.</li>
+              <li>Collaborated cross-functionally with a team of 7 across Summer 2025 and Winter 2025 audit cycles.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Department of Pediatrics, UIC</h3>
+              <span class="timeline-date">Feb 2026 — May 2026</span>
+            </div>
+            <p class="timeline-sub">Web Developer Graduate Hourly · Chicago, IL</p>
+            <ul class="timeline-bullets">
+              <li>Redesigned and maintained 15+ web pages using HTML, JavaScript, and WordPress, ensuring ADA compliance.</li>
+              <li>Tracked 12,000+ monthly page views and 38,000+ user interactions using Google Analytics, presenting insights to department leadership.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Popular PG</h3>
+              <span class="timeline-date">Jan 2023 — Mar 2023</span>
+            </div>
+            <p class="timeline-sub">Python Backend Developer Intern · Bangalore, India</p>
+            <ul class="timeline-bullets">
+              <li>Improved backend query efficiency by 40% by optimizing SQL queries across a multi-location relational database system.</li>
+              <li>Resolved production bugs ensuring 99%+ uptime across 5+ operational locations.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ============================================================ -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Filter tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="da">Data Analysis</button>
+        <button class="filter-btn" data-filter="ds">Data Science</button>
+        <button class="filter-btn" data-filter="de">Data Engineering</button>
+        <button class="filter-btn" data-filter="swe">Software Engineering</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project: UrbanGait -->
+        <div class="project-card" data-category="da">
+          <div class="project-tag">Data Analysis</div>
+          <h3>UrbanGait — Multimodal Gait Analysis Dashboard</h3>
+          <p>Interactive dashboard synchronizing GPS, accelerometer, gyroscope, and barometer sensor data with video playback for real-world gait pattern analysis.</p>
+          <div class="project-tech"><span>D3.js</span><span>Chart.js</span><span>Leaflet</span><span>React</span></div>
+          <div class="project-links">
+            <a href="https://leovsferreira.github.io/urbanGait/" target="_blank">Live Demo</a>
+            <a href="https://github.com/leovsferreira/urbanGait" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Electoral -->
+        <div class="project-card" data-category="da">
+          <div class="project-tag">Data Analysis</div>
+          <h3>Electoral Data Analysis Series</h3>
+          <p>Analysis of AP Elections 2019 & 2024 and US Presidential 2020 across 175 constituencies and 3,100+ counties. 20+ choropleth maps, donut charts, and scatter plots.</p>
+          <div class="project-tech"><span>Python</span><span>GeoPandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003/Andhra-Pradesh-Elections-2019-Results" target="_blank">AP 2019</a>
+            <a href="https://github.com/njaideep2003/Andhra-Pradesh-Elections-2024-Results" target="_blank">AP 2024</a>
+            <a href="https://github.com/njaideep2003/US-state-wise-Presidential-Elections-in-2020" target="_blank">US 2020</a>
+          </div>
+        </div>
+
+        <!-- Project: NYC Trees -->
+        <div class="project-card" data-category="da">
+          <div class="project-tag">Data Analysis</div>
+          <h3>NYC Street Tree Census — Urban Analytics</h3>
+          <p>Processed and visualized 680,000+ tree records. Applied PCA and UMAP for dimensionality reduction. Built interactive linked dashboard with brushing interactions.</p>
+          <div class="project-tech"><span>Python</span><span>scikit-learn</span><span>UMAP</span><span>Vega-Lite</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Race Pulse -->
+        <div class="project-card" data-category="ds">
+          <div class="project-tag">Data Science</div>
+          <h3>Race Pulse — Marathon Time Prediction</h3>
+          <p>Predicted marathon finish times with R² of 0.99 using Random Forest and XGBoost on 79,000+ records integrated with real-time weather data.</p>
+          <div class="project-tech"><span>Python</span><span>XGBoost</span><span>Random Forest</span><span>Plotly</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Movie Recommendation -->
+        <div class="project-card" data-category="ds de">
+          <div class="project-tag">Data Science · Data Engineering</div>
+          <h3>Movie Recommendation System</h3>
+          <p>Real-time recommendation engine using SVD++ and KNN. RMSE of 0.58. Deployed as REST API via FastAPI with Docker, Jenkins CI/CD, and Prometheus/Grafana monitoring.</p>
+          <div class="project-tech"><span>Python</span><span>FastAPI</span><span>Docker</span><span>Prometheus</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Hotel Management -->
+        <div class="project-card" data-category="de swe">
+          <div class="project-tag">Data Engineering · Software Engineering</div>
+          <h3>Hotel Management & Booking Analytics System</h3>
+          <p>Full-stack hotel booking system with normalized PostgreSQL schema, role-based dashboards, booking validation logic, and analytics reporting.</p>
+          <div class="project-tech"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>SQL</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+            <span class="coming-soon">Live: Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Project: Curio Jupyter -->
+        <div class="project-card" data-category="de swe">
+          <div class="project-tag">Data Engineering</div>
+          <h3>Curio ↔ Jupyter Notebook Interoperability</h3>
+          <p>Bidirectional converter transforming Jupyter notebooks into structured visual workflow graphs and back. Heuristic-based node classification for workflow stages.</p>
+          <div class="project-tech"><span>Python</span><span>Jupyter</span><span>JSON</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Encrypted Messaging -->
+        <div class="project-card" data-category="swe">
+          <div class="project-tag">Software Engineering</div>
+          <h3>End-to-End Encrypted Messaging</h3>
+          <p>Secure chat application implementing Telegram MTProto 2.0 with AES-256-IGE encryption and Diffie-Hellman key exchange for Cloud and Secret Chat modes.</p>
+          <div class="project-tech"><span>Python</span><span>JavaScript</span><span>AES-256</span><span>HTML/CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/njaideep2003" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project: Customer Churn (Coming Soon) -->
+        <div class="project-card coming-soon-card" data-category="ds">
+          <div class="project-tag">Data Science</div>
+          <h3>Customer Churn Prediction with SHAP</h3>
+          <p>Classification model with SHAP explainability to predict high-risk customers and identify key churn drivers for targeted retention strategies.</p>
+          <div class="project-tech"><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span></div>
+          <div class="project-links">
+            <span class="coming-soon">In Progress</span>
+          </div>
+        </div>
+
+        <!-- Project: Sales Dashboard (Coming Soon) -->
+        <div class="project-card coming-soon-card" data-category="da">
+          <div class="project-tag">Data Analysis</div>
+          <h3>Sales & E-commerce Business Analytics Dashboard</h3>
+          <p>End-to-end business analytics project on 100,000+ e-commerce orders. Revenue trends, customer segmentation, KPI tracking, and live Streamlit dashboard.</p>
+          <div class="project-tech"><span>Python</span><span>SQL</span><span>Power BI</span><span>Streamlit</span></div>
+          <div class="project-links">
+            <span class="coming-soon">In Progress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+       Add your certifications here when you have them.
+       Format: copy one .cert-item block and fill in your details.
+       ============================================================ -->
+  <section id="certifications">
+    <div class="section-inner">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-placeholder">
+          <p>Certifications coming soon.</p>
+          <p class="muted">Pursuing Google Data Analytics Certificate and Tableau Desktop Specialist.</p>
+        </div>
+        <!-- GUIDE: When you have certifications, replace the above with:
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-info">
+            <h4>Certificate Name</h4>
+            <p>Issuing Organization · Month Year</p>
+            <a href="CREDENTIAL_LINK" target="_blank">View Credential</a>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXTRA LINKS SECTION
+       ============================================================ -->
+  <section id="links">
+    <div class="section-inner">
+      <h2 class="section-title">Find Me Online</h2>
+      <div class="links-grid">
+
+        <a href="https://www.linkedin.com/in/nutalapati-jaideep" target="_blank" class="link-card">
+          <div class="link-icon">in</div>
+          <div class="link-info">
+            <h4>LinkedIn</h4>
+            <p>nutalapati-jaideep</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/njaideep2003" target="_blank" class="link-card">
+          <div class="link-icon">&#10022;</div>
+          <div class="link-info">
+            <h4>GitHub</h4>
+            <p>njaideep2003 · 22 repositories</p>
+          </div>
+        </a>
+
+        <a href="https://sites.google.com/view/jaideep-nutalapati" target="_blank" class="link-card">
+          <div class="link-icon">&#9670;</div>
+          <div class="link-info">
+            <h4>Google Sites Portfolio</h4>
+            <p>jaideep-nutalapati</p>
+          </div>
+        </a>
+
+        <div class="link-card resume-links">
+          <div class="link-icon">&#9776;</div>
+          <div class="link-info">
+            <h4>Resumes</h4>
+            <div class="resume-link-group">
+              <a href="resume/Jaideep_DA_Resume.pdf" download>Data Analyst</a>
+              <a href="resume/Jaideep_DS_Resume.pdf" download>Data Scientist</a>
+              <a href="resume/Jaideep_DE_Resume.pdf" download>Data Engineer</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Open to Data Analyst, Data Scientist, and Data Engineer roles in Chicago and remote.
+            Feel free to reach out for opportunities, collaborations, or just to talk data.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:nutalapatijaideep18@gmail.com">nutalapatijaideep18@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+18723577445">+1 (872) 357-7445</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span>Chicago, IL 60607</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/nutalapati-jaideep" target="_blank">nutalapati-jaideep</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" action="mailto:nutalapatijaideep18@gmail.com" method="get" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="body" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <p>Jaideep Nutalapati · Chicago, IL · Built with HTML, CSS & JS · Hosted on GitHub Pages</p>
+      <p class="footer-sub">© 2026 Jaideep Nutalapati. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
