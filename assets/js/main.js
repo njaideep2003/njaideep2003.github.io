@@ -98,11 +98,11 @@
   if (!el) return;
 
   const roles = [
-    'Data Analysis',
+    'Data Analytics',
+    'Data Visualization',
     'Data Science',
     'Data Engineering',
-    'Machine Learning',
-    'Data Visualization',
+    
   ];
 
   let roleIdx  = 0;
